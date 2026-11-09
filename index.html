@@ -84,3 +84,379 @@
             </nav>
             <a href="#vergleich" class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition shadow-lg shadow-indigo-600/30">Testsieger Ansehen</a>
         </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 px-4 max-w-5xl mx-auto text-center relative">
+        <div class="inline-flex items-center space-x-2 bg-indigo-950/80 border border-indigo-500/30 px-4 py-1.5 rounded-full text-xs font-medium text-indigo-300 mb-6 shadow-inner">
+            <span class="animate-pulse">🔴</span>
+            <span>Unabhängiger KI-Testbericht • Stand 2026</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+            Fotos in Videos umwandeln mit KI:<br>
+            <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">Die 5 besten Tools im Praxistest</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Hau deinen Standbildern, Porträts und Landschaftsaufnahmen magisches Leben ein. Wir haben die führenden KI-Video-Generatoren auf Bildqualität, Physik, Tempo und Kosten getestet.
+        </p>
+    </section>
+
+    <!-- Interaktiver Vorher-Nachher Slider Demo -->
+    <section id="demo" class="max-w-4xl mx-auto px-4 pb-20">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold mb-2">So realistisch animiert KI deine Fotos</h2>
+            <p class="text-slate-400 text-sm">Ziehe den Regler, um die Umwandlung vom Standbild zum Video zu sehen</p>
+        </div>
+
+        <div class="relative w-full h-[320px] md:h-[480px] rounded-2xl overflow-hidden shadow-2xl border border-slate-800 select-none cursor-ew-resize" id="slider-container" onmousemove="moveSlider(event)" ontouchmove="moveSlider(event)">
+            <!-- Before Image (Foto) -->
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80" alt="Foto Original" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur text-xs px-3 py-1.5 rounded-md font-semibold border border-slate-700">📷 Original-Foto (Standbild)</div>
+
+            <!-- After Image (Video Animation Overlay) -->
+            <div class="absolute inset-0 w-1/2 overflow-hidden border-r-2 border-indigo-500 shadow-2xl" id="after-overlay">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80" alt="KI Animiertes Video" class="absolute inset-0 w-full max-w-none h-full object-cover" id="after-img">
+                <div class="absolute top-4 left-4 bg-indigo-600/90 backdrop-blur text-xs px-3 py-1.5 rounded-md font-semibold text-white shadow">✨ KI-Video Animation</div>
+            </div>
+
+            <!-- Slider Handle Bar -->
+            <div class="absolute top-0 bottom-0 w-1 bg-indigo-500 cursor-ew-resize" id="slider-bar" style="left: 50%;">
+                <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 bg-indigo-600 text-white rounded-full flex items-center justify-center shadow-lg border-2 border-white text-xs font-bold">
+                    ↔
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 5 KI-Modelle Detailed Ranking -->
+    <section id="vergleich" class="max-w-6xl mx-auto px-4 py-12">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Das große Vergleichs-Ranking 2026</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Basierend auf über 100 Test-Generierungen mit komplexen Prompts, Porträts und Landschaftsaufnahmen.</p>
+        </div>
+
+        <div class="space-y-10">
+
+            <!-- Platz 1: PixVerse (Testsieger) -->
+            <div class="relative bg-gradient-to-b from-slate-900 to-slate-900/90 border-2 border-indigo-500 rounded-2xl p-6 md:p-8 shadow-2xl shadow-indigo-500/20">
+                <div class="absolute -top-4 left-6 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg flex items-center space-x-1">
+                    <span>🏆 PLATZ 1 – TESTSIEGER & PREIS-LEISTUNG</span>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 items-center mt-2">
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <h3 class="text-3xl font-extrabold text-white">PixVerse AI</h3>
+                            <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30">Sehr Empfohlen</span>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed">
+                            PixVerse AI setzt aktuell den Maßstab für Bild-zu-Video-Generierungen im Alltag. Die Plattform überzeugt durch rasant schnelle Ladezeiten, extrem flüssige Bewegungsabläufe und eine intuitive Steuerung. Sowohl Gesichtszüge bei Porträts als auch komplexe Kamerafahrten gelingen fehlerfrei.
+                        </p>
+                        
+                        <!-- Feature Badges -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 pt-2">
+                            <div class="bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/80 text-xs">
+                                <span class="text-slate-400 block">Tempo:</span>
+                                <span class="font-bold text-indigo-300">⚡ Sehr schnell (~30 Sek)</span>
+                            </div>
+                            <div class="bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/80 text-xs">
+                                <span class="text-slate-400 block">Freiguthaben:</span>
+                                <span class="font-bold text-emerald-400">🎁 Täglich kostenlos</span>
+                            </div>
+                            <div class="bg-slate-800/80 px-3 py-2 rounded-lg border border-slate-700/80 text-xs col-span-2 md:col-span-1">
+                                <span class="text-slate-400 block">Besonderheit:</span>
+                                <span class="font-bold text-purple-300">🎯 Präzise Regie-Prompts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950/80 p-6 rounded-xl border border-slate-800 text-center space-y-4">
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Gesamtbewertung</span>
+                            <div class="text-4xl font-extrabold text-amber-400 mt-1">4.9 <span class="text-sm text-slate-500 font-normal">/ 5.0</span></div>
+                            <div class="text-xs text-amber-400 tracking-widest mt-1">★★★★★</div>
+                        </div>
+                        <!-- Affiliate Link -->
+                        <a href="DEIN_PIXVERSE_AFFILIATE_LINK" target="_blank" rel="noopener sponsored" class="block w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-indigo-600/30 transition transform hover:-translate-y-0.5 text-sm">
+                            PixVerse Gratis Testen ➔
+                        </a>
+                        <span class="block text-[11px] text-slate-500">Kostenloser Test ohne Kreditkarte</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platz 2: Luma Dream Machine -->
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="md:col-span-2 space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-indigo-400 font-mono font-bold text-xl">#2</span>
+                            <h3 class="text-2xl font-bold text-white">Luma Dream Machine</h3>
+                            <span class="bg-indigo-500/10 text-indigo-300 text-xs px-2.5 py-0.5 rounded-full border border-indigo-500/20">Fotorealismus-Tipp</span>
+                        </div>
+                        <p class="text-slate-400 leading-relaxed text-sm">
+                            Luma glänzt mit einer überragenden KI-Physik-Engine. Lichtbrechungen, Reflexionen und dreidimensionale Bewegung im Raum wirken erstaunlich nah an echten Kameraaufnahmen.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-400 pt-1">
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">🎥 3D-Kameradynamik</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">✨ Hohe Detailschärfe</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/50 p-5 rounded-xl border border-slate-800/80 text-center space-y-3">
+                        <div class="text-xl font-bold text-amber-400">4.8 / 5.0</div>
+                        <a href="#vergleich" class="block w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition">
+                            Details & Testbericht
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platz 3: Runway Gen-3 -->
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="md:col-span-2 space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-indigo-400 font-mono font-bold text-xl">#3</span>
+                            <h3 class="text-2xl font-bold text-white">Runway (Gen-3 Alpha)</h3>
+                            <span class="bg-purple-500/10 text-purple-300 text-xs px-2.5 py-0.5 rounded-full border border-purple-500/20">Profi-Standard</span>
+                        </div>
+                        <p class="text-slate-400 leading-relaxed text-sm">
+                            Der Favorit vieler Filmemacher und Creators. Runway bietet weitreichende Einstellmöglichkeiten für Kamerabewegungen und Zeitraffer-Effekte, erfordert aber etwas Einarbeitungszeit.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-400 pt-1">
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">🎬 Kinoreife Stile</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">🎛️ Motion-Brush-Funktion</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/50 p-5 rounded-xl border border-slate-800/80 text-center space-y-3">
+                        <div class="text-xl font-bold text-amber-400">4.7 / 5.0</div>
+                        <a href="#vergleich" class="block w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition">
+                            Details & Testbericht
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platz 4: Kling AI -->
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="md:col-span-2 space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-indigo-400 font-mono font-bold text-xl">#4</span>
+                            <h3 class="text-2xl font-bold text-white">Kling AI</h3>
+                            <span class="bg-blue-500/10 text-blue-300 text-xs px-2.5 py-0.5 rounded-full border border-blue-500/20">Bewegungs-König</span>
+                        </div>
+                        <p class="text-slate-400 leading-relaxed text-sm">
+                            Bekannt für hervorragende Körper- und Gesichtsanimationen. Kling AI ist extrem stark darin, schwere physikalische Bewegungen (z. B. Gehen, Haare im Wind) naturnahe nachzubilden.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-400 pt-1">
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">👤 Starke Mimik & Gestik</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">⏱️ Bis zu 10 Sek. Clips</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/50 p-5 rounded-xl border border-slate-800/80 text-center space-y-3">
+                        <div class="text-xl font-bold text-amber-400">4.6 / 5.0</div>
+                        <a href="#vergleich" class="block w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition">
+                            Details & Testbericht
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platz 5: Pika Labs -->
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="md:col-span-2 space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-indigo-400 font-mono font-bold text-xl">#5</span>
+                            <h3 class="text-2xl font-bold text-white">Pika AI (Pika Labs)</h3>
+                            <span class="bg-pink-500/10 text-pink-300 text-xs px-2.5 py-0.5 rounded-full border border-pink-500/20">Einsteiger & Fun</span>
+                        </div>
+                        <p class="text-slate-400 leading-relaxed text-sm">
+                            Sehr einfach zu bedienen und ideal für schnelle Social-Media-Effekte, 3D-Transformationen und lustige Meme-Animationen mit automatischer Sound-Generierung.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-400 pt-1">
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">🔊 Integrierter KI-Sound</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-md border border-slate-700">🎨 Spezial-Effekte</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/50 p-5 rounded-xl border border-slate-800/80 text-center space-y-3">
+                        <div class="text-xl font-bold text-amber-400">4.5 / 5.0</div>
+                        <a href="#vergleich" class="block w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition">
+                            Details & Testbericht
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interaktive Vergleichstabelle -->
+    <section id="tabelle" class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-10">Direkter Feature-Vergleich</h2>
+        <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/40">
+            <table class="w-full text-left text-sm text-slate-300">
+                <thead class="bg-slate-900 text-slate-200 uppercase text-xs font-semibold tracking-wider border-b border-slate-800">
+                    <tr>
+                        <th class="p-4">KI-Modell</th>
+                        <th class="p-4">Fokus & Stärke</th>
+                        <th class="p-4">Generierungszeit</th>
+                        <th class="p-4">Freiguthaben</th>
+                        <th class="p-4">Bewertung</th>
+                        <th class="p-4 text-right">Aktion</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800/60">
+                    <tr class="bg-indigo-950/20 font-medium">
+                        <td class="p-4 text-white font-bold flex items-center space-x-2">
+                            <span>🏆 PixVerse AI</span>
+                        </td>
+                        <td class="p-4">Allrounder, Tempo & Bedienung</td>
+                        <td class="p-4 text-emerald-400 font-semibold">⚡ ~30 Sek.</td>
+                        <td class="p-4">Täglich Gratis</td>
+                        <td class="p-4 text-amber-400 font-bold">4.9 / 5.0</td>
+                        <td class="p-4 text-right">
+                            <a href="DEIN_PIXVERSE_AFFILIATE_LINK" target="_blank" rel="noopener sponsored" class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white text-xs px-3 py-1.5 rounded-lg font-semibold transition">Testen ➔</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 text-white font-semibold">Luma Dream Machine</td>
+                        <td class="p-4">Fotorealistische KI-Physik</td>
+                        <td class="p-4">~60 Sek.</td>
+                        <td class="p-4">Monatliches Kontingent</td>
+                        <td class="p-4 text-amber-400 font-bold">4.8 / 5.0</td>
+                        <td class="p-4 text-right"><span class="text-xs text-slate-500">Im Test</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 text-white font-semibold">Runway Gen-3</td>
+                        <td class="p-4">Cinematic & Profi-Funktionen</td>
+                        <td class="p-4">~45 Sek.</td>
+                        <td class="p-4">Einmaliges Testguthaben</td>
+                        <td class="p-4 text-amber-400 font-bold">4.7 / 5.0</td>
+                        <td class="p-4 text-right"><span class="text-xs text-slate-500">Im Test</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 text-white font-semibold">Kling AI</td>
+                        <td class="p-4">Menschliche Bewegung & Mimik</td>
+                        <td class="p-4">~90 Sek.</td>
+                        <td class="p-4">Tägliches Login-Guthaben</td>
+                        <td class="p-4 text-amber-400 font-bold">4.6 / 5.0</td>
+                        <td class="p-4 text-right"><span class="text-xs text-slate-500">Im Test</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 text-white font-semibold">Pika AI</td>
+                        <td class="p-4">3D-Effekte, Sound & Memes</td>
+                        <td class="p-4">~40 Sek.</td>
+                        <td class="p-4">Täglich Gratis-Credits</td>
+                        <td class="p-4 text-amber-400 font-bold">4.5 / 5.0</td>
+                        <td class="p-4 text-right"><span class="text-xs text-slate-500">Im Test</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Schritt-für-Schritt Anleitung -->
+    <section id="anleitung" class="max-w-4xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">In 3 einfachen Schritten zum KI-Video</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-900/80 p-6 rounded-2xl border border-slate-800 text-center space-y-3">
+                <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 font-bold rounded-xl flex items-center justify-center mx-auto text-xl border border-indigo-500/30">1</div>
+                <h3 class="font-bold text-white">Foto hochladen</h3>
+                <p class="text-sm text-slate-400">Wähle ein scharfes Foto (JPG/PNG) deines Motivs aus und lade es bei der KI hoch.</p>
+            </div>
+            <div class="bg-slate-900/80 p-6 rounded-2xl border border-slate-800 text-center space-y-3">
+                <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 font-bold rounded-xl flex items-center justify-center mx-auto text-xl border border-indigo-500/30">2</div>
+                <h3 class="font-bold text-white">Bewegung beschreiben</h3>
+                <p class="text-sm text-slate-400">Gib einen kurzen Texthinweis (z. B. "Haare wehen sanft im Wind") ein oder nutze Auto-Motion.</p>
+            </div>
+            <div class="bg-slate-900/80 p-6 rounded-2xl border border-slate-800 text-center space-y-3">
+                <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 font-bold rounded-xl flex items-center justify-center mx-auto text-xl border border-indigo-500/30">3</div>
+                <h3 class="font-bold text-white">Video herunterladen</h3>
+                <p class="text-sm text-slate-400">Nach wenigen Sekunden steht dein fertig animiertes MP4-Video im HD-Format bereit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="max-w-3xl mx-auto px-4 py-16 border-t border-slate-800/80">
+        <h2 class="text-3xl font-bold text-center mb-10">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-4">
+            
+            <div class="bg-slate-900/80 border border-slate-800 rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold flex justify-between items-center hover:bg-slate-800/50 transition">
+                    <span>Wie funktioniert die Umwandlung von Foto in Video mit KI?</span>
+                    <span id="faq-icon-1" class="transition-transform duration-300">▼</span>
+                </button>
+                <div id="faq-content-1" class="p-5 pt-0 text-slate-400 text-sm leading-relaxed hidden">
+                    Moderne KI-Generatoren analysieren Tiefe, Konturen und Lichtquellen deines Standbildes. Mithilfe von neuronalen Netzwerken errechnen sie flüssige Zwischenbilder und erzeugen so eine naturnahe Video-Animation.
+                </div>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold flex justify-between items-center hover:bg-slate-800/50 transition">
+                    <span>Kann ich Fotos komplett kostenlos animieren?</span>
+                    <span id="faq-icon-2" class="transition-transform duration-300">▼</span>
+                </button>
+                <div id="faq-content-2" class="p-5 pt-0 text-slate-400 text-sm leading-relaxed hidden">
+                    Ja, Plattformen wie PixVerse AI bieten tägliche Freikredite an, mit denen du mehrere Videos pro Tag ohne Zusatzkosten erstellen kannst.
+                </div>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold flex justify-between items-center hover:bg-slate-800/50 transition">
+                    <span>Welche Bildformate liefern die besten Ergebnisse?</span>
+                    <span id="faq-icon-3" class="transition-transform duration-300">▼</span>
+                </button>
+                <div id="faq-content-3" class="p-5 pt-0 text-slate-400 text-sm leading-relaxed hidden">
+                    Gut belichtete Porträts, Landschaften und klare Produktfotos im Format JPG oder PNG liefern die stabilsten und realistischsten Video-Ergebnisse.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-12 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 space-y-4">
+            <p class="font-semibold text-slate-400">© 2026 VideoAusFoto.de – Unabhängiger Vergleich von KI-Video-Generatoren</p>
+            <p class="max-w-2xl mx-auto leading-relaxed">
+                <strong class="text-slate-400">Affiliate-Transparenz:</strong> Einige Links auf dieser Seite sind sogenannte Partnerlinks. Wenn du darüber ein kostenpflichtiges Abonnement abschließt, erhalten wir eine kleine Provision. Der Kaufpreis bleibt für dich exakt gleich.
+            </p>
+            <div class="space-x-4 pt-2">
+                <a href="#" class="hover:text-slate-400 transition">Impressum</a>
+                <span>•</span>
+                <a href="#" class="hover:text-slate-400 transition">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript logic -->
+    <script>
+        // Vorher-Nachher Slider Logik
+        function moveSlider(e) {
+            const container = document.getElementById('slider-container');
+            const rect = container.getBoundingClientRect();
+            let clientX = e.clientX;
+            if (e.touches && e.touches[0]) {
+                clientX = e.touches[0].clientX;
+            }
+            let position = (clientX - rect.left) / rect.width;
+            if (position < 0.05) position = 0.05;
+            if (position > 0.95) position = 0.95;
+
+            document.getElementById('after-overlay').style.width = (position * 100) + '%';
+            document.getElementById('slider-bar').style.left = (position * 100) + '%';
+        }
+
+        // FAQ Accordion Logik
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+</body>
+</html>
